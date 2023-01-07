@@ -5,6 +5,7 @@ playlists to download, and then downloading them one by one.
 
 ## Quick setup with systemd
 
+0) You will need to install `youtube-dl` or `yt-dlp` separately. I can't tell you how.
 1) Download the `youtube-dl-svc.sh` and `youtube-dl-svc.service`, e.g. by cloning the repo.
 2) Edit `youtube-dl.svc.sh` to configure your `DOWNLOADS_PATH`, `DOWNLOADS_FILE`, `YOUTUBE_DL` and `ARGS` as necessary. 
     Check out the options for [youtube-dl](https://github.com/ytdl-org/youtube-dl/blob/master/README.md#options) and
