@@ -1,0 +1,10 @@
+[Unit]
+Description=youtube-dl monitoring service
+
+[Service]
+ExecStart=/home/lietu/src/youtube-dl-svc/youtube-dl-svc.sh
+User=lietu
+Group=lietu
+
+[Install]
+WantedBy=multi-user.target
