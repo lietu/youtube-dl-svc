@@ -9,6 +9,7 @@ DOWNLOADS_PATH="/home/lietu/storage/storage/youtube/downloads"
 
 # Path to the file that has the links to download
 DOWNLOADS_FILE="/home/lietu/storage/storage/youtube/downloads.txt"
+ARCHIVE_FILE="/home/lietu/storage/storage/youtube/downloads_archive.txt"
 
 # Which program to use for downloading
 YOUTUBE_DL="yt-dlp"
@@ -16,6 +17,7 @@ YOUTUBE_DL="yt-dlp"
 # What args to give it in addition to the URL
 ARGS="
   -R infinite
+  --download-archive $ARCHIVE_FILE
   --sponsorblock-mark all
   --sponsorblock-remove sponsor
   -S height:1080
